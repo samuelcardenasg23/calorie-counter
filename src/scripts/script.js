@@ -7,10 +7,16 @@ const output = document.getElementById('output');
 let isError = false;
 
 function cleanInputString(str) {
-    const strArray = str.split('');
-    const cleanStrArray = [];
+    const regex = /[+-\s]/g; // regex is to look for this expressions in the input and the 'g' is for global, it means it can search multiple times for the expression
+    return str.replace(regex, '');
+}
 
-    for (let i = 0; i < strArray.length; i++) {
-        
-    }
+function isInvalidInput(str) {
+    const regex = /\d+e\d+/i; // i flag is for Case-insensitive search.
+    return str.match(regex);
+}
+
+function addEntry() {
+    const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
+    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length();
 }

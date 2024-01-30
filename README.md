@@ -33,4 +33,4 @@ The Calorie Counter project is a web application that helps users manage and tra
 - Click the "Clear" button to reset the form and start over.
 
 ## Getting Started
-Open [Calorie Counter](https://github.com/samuelcardenasg23/calorie-counter)
+Open [Calorie Counter](https://samuelcardenasg23.github.io/calorie-counter/)
